@@ -3,7 +3,7 @@
 "productName": "CrownJoules9",
 "productVersion": "0.1",
 "dataUrl": "CrownJoules9Beta.data.unityweb",
-"wasmCodeUrl": "CrownJoules9Beta.wasm",
+"wasmCodeUrl": "CrownJoules9Beta.wasm.code.unityweb",
 "wasmFrameworkUrl": "CrownJoules9Beta.wasm.framework.unityweb",
 "graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},

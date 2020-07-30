@@ -5,7 +5,7 @@
 "dataUrl": "CrownJoules9Beta.data.unityweb",
 "wasmCodeUrl": "CrownJoules9Beta.wasm",
 "wasmFrameworkUrl": "CrownJoules9Beta.wasm.framework.unityweb",
-"graphicsAPI": ["WebGL 2.0"],
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
 "splashScreenStyle": "Dark",
 "backgroundColor": "#000000",

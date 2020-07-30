@@ -1,0 +1,5 @@
+<IfModule mod_mime.c>
+  AddEncoding gzip .unityweb
+  AddEncoding gzip .wasm
+  AddType application/wasm .wasm
+</IfModule>

@@ -3,6 +3,7 @@ plugins:
 relative_links:
   enabled: true
   collections: true
+  future: true
 include:
   - index.md
 theme: jekyll-theme-slate

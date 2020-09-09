@@ -1,0 +1,15 @@
+{
+"companyName": "DefaultCompany",
+"productName": "IonicReactions",
+"productVersion": "0.1",
+"dataUrl": "Sept 8 build.data.unityweb",
+"wasmCodeUrl": "Sept 8 build.wasm.code.unityweb",
+"wasmFrameworkUrl": "Sept 8 build.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.4f1"
+}

@@ -1,0 +1,164 @@
+{
+    "objects": [
+        {
+            "name": "Circle(Clone)",
+            "ID": 0,
+            "position": {
+                "x": 0.0,
+                "y": 5.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 5.0,
+                "y": 5.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.9764705896377564,
+                "g": 0.2549019753932953,
+                "b": 0.2666666805744171,
+                "a": 1.0
+            },
+            "charge": 1,
+            "useGravity": true,
+            "isAnchored": true,
+            "usePointJoint": false,
+            "pointJointPosition": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "initialVelocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "connectedIDs": [],
+            "linePositions": []
+        },
+        {
+            "name": "Circle(Clone)",
+            "ID": 1,
+            "position": {
+                "x": 0.0,
+                "y": -5.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 5.0,
+                "y": 5.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.9764705896377564,
+                "g": 0.2549019753932953,
+                "b": 0.2666666805744171,
+                "a": 1.0
+            },
+            "charge": 1,
+            "useGravity": true,
+            "isAnchored": true,
+            "usePointJoint": false,
+            "pointJointPosition": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "initialVelocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "connectedIDs": [],
+            "linePositions": []
+        },
+        {
+            "name": "Circle(Clone)",
+            "ID": 2,
+            "position": {
+                "x": 5.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 5.0,
+                "y": 5.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.34117648005485537,
+                "g": 0.4588235318660736,
+                "b": 0.5647059082984924,
+                "a": 1.0
+            },
+            "charge": -1,
+            "useGravity": false,
+            "isAnchored": false,
+            "usePointJoint": false,
+            "pointJointPosition": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "initialVelocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "connectedIDs": [],
+            "linePositions": []
+        },
+        {
+            "name": "Circle(Clone)",
+            "ID": 3,
+            "position": {
+                "x": -5.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 5.0,
+                "y": 5.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.34117648005485537,
+                "g": 0.4588235318660736,
+                "b": 0.5647059082984924,
+                "a": 1.0
+            },
+            "charge": -1,
+            "useGravity": false,
+            "isAnchored": false,
+            "usePointJoint": false,
+            "pointJointPosition": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "initialVelocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "connectedIDs": [],
+            "linePositions": []
+        }
+    ]
+}

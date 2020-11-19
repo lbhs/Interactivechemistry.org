@@ -1,6 +1,6 @@
 {
 "companyName": "IC2020",
-"productName": "CombustionSimulator",
+"productName": "Photosynthesis",
 "productVersion": "1.0",
 "dataUrl": "PhotosynthesisNov18.data.unityweb",
 "wasmCodeUrl": "PhotosynthesisNov18.wasm.code.unityweb",

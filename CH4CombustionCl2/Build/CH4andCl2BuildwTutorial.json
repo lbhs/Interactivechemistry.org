@@ -1,0 +1,16 @@
+{
+"companyName": "IC2020",
+"productName": "Photosynthesis",
+"productVersion": "1.0",
+"dataUrl": "CH4andCl2BuildwTutorial.data.unityweb",
+"wasmCodeUrl": "CH4andCl2BuildwTutorial.wasm.code.unityweb",
+"wasmFrameworkUrl": "CH4andCl2BuildwTutorial.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.4f1"
+}

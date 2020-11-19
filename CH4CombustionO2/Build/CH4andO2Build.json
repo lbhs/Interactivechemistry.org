@@ -1,6 +1,6 @@
 {
 "companyName": "IC2020",
-"productName": "CombustionSimulator",
+"productName": "Combustion Reactions",
 "productVersion": "1.0",
 "dataUrl": "CH4andO2Build.data.unityweb",
 "wasmCodeUrl": "CH4andO2Build.wasm.code.unityweb",

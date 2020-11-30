@@ -1,6 +1,6 @@
 {
 "companyName": "DefaultCompany",
-"productName": "IonicReactions",
+"productName": "SolubilityTester",
 "productVersion": "0.1",
 "dataUrl": "SolubilityTester.data.unityweb",
 "wasmCodeUrl": "SolubilityTester.wasm.code.unityweb",

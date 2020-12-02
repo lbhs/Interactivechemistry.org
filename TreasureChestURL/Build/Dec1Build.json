@@ -1,0 +1,16 @@
+{
+"companyName": "InteractiveChemistry.org",
+"productName": "Treasure Chest",
+"productVersion": "2",
+"dataUrl": "Dec1Build.data.unityweb",
+"wasmCodeUrl": "Dec1Build.wasm.code.unityweb",
+"wasmFrameworkUrl": "Dec1Build.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.4f1"
+}

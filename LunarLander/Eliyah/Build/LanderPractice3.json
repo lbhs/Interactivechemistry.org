@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Lunar Landing",
+"productVersion": "0.1",
+"dataUrl": "LanderPractice3.data.unityweb",
+"wasmCodeUrl": "LanderPractice3.wasm.code.unityweb",
+"wasmFrameworkUrl": "LanderPractice3.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.4f1"
+}

@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Lunar Lander",
+"productVersion": "0.1",
+"dataUrl": "10DecProject.data.unityweb",
+"wasmCodeUrl": "10DecProject.wasm.code.unityweb",
+"wasmFrameworkUrl": "10DecProject.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.4f1"
+}

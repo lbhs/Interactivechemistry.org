@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Treasure Chest",
+"productVersion": "0.1",
+"dataUrl": "TreasureChest4.data.unityweb",
+"wasmCodeUrl": "TreasureChest4.wasm.code.unityweb",
+"wasmFrameworkUrl": "TreasureChest4.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Light",
+"backgroundColor": "#828080",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.4f1"
+}

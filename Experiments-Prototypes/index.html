@@ -1,178 +1,383 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<link rel="icon" href="favicon.ico">
+<title>
+        Interactive Chemistry Experiments and Prototypes
+</title>
+<meta name=" description" content="
+We are a group of student developers making educational games and simulations 
+for Chromebooks, Mac, and Windows devices. We specialize in Chemistry and Physics.
+">
+<!-- <meta name="Keywords" content="
+We are a group of developers making educational games and simulations.
+"> -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+                font-family: "Karma", sans-serif
+        }
 
-<head>
-        <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        .w3-bar-block .w3-bar-item {
+                padding: 20px
+        }
+</style>
 
-        <title>IC 2020 Archive</title>
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-                integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-                crossorigin="anonymous">
-</head>
 
 <body>
-        <div class="container-fluid">
-                <div class="jumbotron" style="padding-bottom: .25rem; padding-top: .75rem;">
-                        <h2>
-                                Welcome to the IC2020 Games Archive!
-                        </h2>
-                        <p>
-                                These are all the games we started developing but stopped or put on hold for one reason
-                                or another. You can find the code on the Github below if you would like to finish the
-                                project.
-                        </p>
-                        <p>
-                                <a href="https://github.com/lbhs/" target="_blank" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"
-                                                style="height: 20px;">
-                                                <path d="M14 0C6.27 0 0 6.43 0 14.36c0 6.34 4.01 11.72 9.57 13.62.7.13.96-.31.96-.69 0-.34-.01-1.24-.02-2.44-3.89.87-4.72-1.92-4.72-1.92-.64-1.66-1.55-2.1-1.55-2.1-1.27-.89.1-.87.1-.87 1.4.1 2.14 1.48 2.14 1.48 1.25 2.19 3.28 1.56 4.07 1.19.13-.93.49-1.56.89-1.92-3.11-.36-6.38-1.59-6.38-7.09 0-1.57.55-2.85 1.44-3.85-.14-.36-.62-1.82.14-3.8 0 0 1.18-.39 3.85 1.47a12.8 12.8 0 013.5-.48c1.19.01 2.39.16 3.5.48 2.67-1.86 3.85-1.47 3.85-1.47.76 1.98.28 3.44.14 3.8.9 1 1.44 2.28 1.44 3.85 0 5.51-3.27 6.73-6.39 7.08.5.44.95 1.32.95 2.66 0 1.92-.02 3.47-.02 3.94 0 .38.25.83.96.69C23.99 26.07 28 20.7 28 14.36 28 6.43 21.73 0 14 0z"
-                                                        fill-rule="evenodd" clip-rule="evenodd"></path>
-                                        </svg>
-                                        View on Github</a>
-                                <a href="../" target="_blank" class="btn">
-                                        Go Back to the main site</a>
-                        </p>
 
-                </div>
-
-
-
-
-
-
-
-
-                <!----------------------------------------------------- row one----------------------------------------------------------------------->
-                <div class="row">
-                        <!--------------------------------------------------------------------------------------------------------------------->
-                        <div class="col-sm-4">
-                                <div class="card" style="width: 18rem;">
-                                        <a href="Ayeeh"><img class="card-img-top" src="../Images/Ayeeh.png"
-                                                        alt="Ayeeh!"></a>
-                                        <div class="card-body">
-                                                <h5 class="card-title">Ayeeh!</h5>
-                                                <p class="card-text" style="height: 100px;">A fun and educational
-                                                        shoot-em-up game game about electrons. This is buggy but feature
-                                                        complete. <b>(development stoped)</b>
-                                                </p>
-                                                <a href="Ayeeh" class="btn btn-primary">Play now!</a>
-                                        </div>
-                                </div>
-                        </div>
-                        <!--------------------------------------------------------------------------------------------------------------------->
-                        <!--------------------------------------------------------------------------------------------------------------------->
-                        <div class="col-sm-4">
-                                <div class="card" style="width: 18rem;">
-                                        <a href="Build%20Spaceinvaders/"><img class="card-img-top"
-                                                        src="../Images/Photon_torpedoes.png" alt="Photon torpedoes"></a>
-                                        <div class="card-body">
-                                                <h5 class="card-title">Photon torpedoes</h5>
-                                                <p class="card-text" style="height: 100px;">Space invaders with atoms!
-                                                        <b>(development put on hold)</b>
-                                                </p>
-                                                <a href="Build%20Spaceinvaders/" class="btn btn-primary">Play now!</a>
-                                        </div>
-                                </div>
-                        </div>
-                        <!--------------------------------------------------------------------------------------------------------------------->
-                        <!--------------------------------------------------------------------------------------------------------------------->
-                        <div class="col-sm-4">
-                                <div class="card" style="width: 18rem;">
-                                        <a href="EscapeRoomPrototype"><img class="card-img-top"
-                                                        src="../Images/Escape-Room.png" alt="Escape Room Prototype"></a>
-                                        <div class="card-body">
-                                                <h5 class="card-title">Escape Room Prototype</h5>
-                                                <p class="card-text" style="height: 100px;">A proof of concept for an
-                                                        escape room that has both flat screen controls and Virtual
-                                                        Reality controls.</p>
-                                                <a href="EscapeRoomPrototype" class="btn btn-primary">Normal</a>
-                                                <a href="EscapeRoomPrototypeWebXR" class="btn btn-primary">WebXR</a>
-                                        </div>
-                                </div>
-                        </div>
-                        <!--------------------------------------------------------------------------------------------------------------------->
-                </div>
-                <!----------------------------------------------------- row one end------------------------------------------------------------------->
-
-
-
-                <!----------------------------------------------------- row two----------------------------------------------------------------------->
-                <div class="row" style="margin-top:2rem;">
-                        <!--------------------------------------------------------------------------------------------------------------------->
-                        <div class="col-sm-4">
-                                <div class="card" style="width: 18rem;">
-                                        <a href="PhysicsSimulation"><img class="card-img-top"
-                                                        src="../Images/PhysicsSimulation.png"
-                                                        alt="Physics Simulation"></a>
-                                        <div class="card-body">
-                                                <h5 class="card-title">Physics Simulation</h5>
-                                                <p class="card-text" style="height: 100px;">A proof of concept on
-                                                        loading JSON files to a website. Meant to imitate <a
-                                                                href="https://www.physicscurriculum.com/interactivephysics">Interactive
-                                                                Physics</a></p>
-                                                <a href="PhysicsSimulation" class="btn btn-primary">Play now!</a>
-                                                <a href="PhysicsSimulation/oscillation.json" class="btn btn-info"
-                                                        download>Download example scene</a>
-                                        </div>
-                                </div>
-                        </div>
-                        <!--------------------------------------------------------------------------------------------------------------------->
-                        <!--------------------------------------------------------------------------------------------------------------------->
-                        <div class="col-sm-4">
-                                <div class="card" style="width: 18rem;">
-                                        <a href="../ComingSoon"><img class="card-img-top" src="../Images/ComingSoon.png"
-                                                        alt="Coming Soon"></a>
-                                        <div class="card-body">
-                                                <h5 class="card-title">Coming Soon</h5>
-                                                <p class="card-text" style="height: 100px;">Coming Soon</p>
-                                                <a href="../ComingSoon" class="btn btn-primary">Coming Soon</a>
-                                        </div>
-                                </div>
-                        </div>
-                        <!--------------------------------------------------------------------------------------------------------------------->
-                        <!--------------------------------------------------------------------------------------------------------------------->
-                        <div class="col-sm-4">
-                                <div class="card" style="width: 18rem;">
-                                        <a href="../ComingSoon"><img class="card-img-top" src="../Images/ComingSoon.png"
-                                                        alt="Coming Soon"></a>
-                                        <div class="card-body">
-                                                <h5 class="card-title">Coming Soon</h5>
-                                                <p class="card-text" style="height: 100px;">Coming Soon</p>
-                                                <a href="../ComingSoon" class="btn btn-primary">Coming Soon</a>
-                                        </div>
-                                </div>
-                        </div>
-                        <!--------------------------------------------------------------------------------------------------------------------->
-                </div>
-                <!----------------------------------------------------- row two end------------------------------------------------------------------->
-
-
-
-                <p></P>
-                <p></P>
-                <a href="../">Back to the main page</a>
-
-
-
-
-
-
+        <!-- Top menu -->
+        <div class="w3-center w3-top w3-whiteDynamic w3-padding-16">
+                <h1>
+                        <a href="../">
+                                <!-- Dark/light images -->
+                                <picture>
+                                        <source srcset="../Images/IC2020logoLightOnDarkCrop.png"
+                                                media="(prefers-color-scheme: dark)" />
+                                        <source srcset="../Images/IC2020logoDarkOnLightCrop.png"
+                                                media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+                                        <img src="../Images/IC2020logoLightOnDarkCrop.png" alt="Interactive Chemistry"
+                                                style="width:200px ">
+                                </picture>
+                        </a>
+                </h1>
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-                crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-                crossorigin="anonymous"></script>
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+                <hr>
+                <div class="w3-center">
+                        <div class="w3-container w3-padding-32 w3-center">
 
+                                <div class="w3-padding-large">
+                                        <h2><b>Experiments and prototypes</b></h2>
+                                        <p> On the following page are prototypes and failed experiments that were stable
+                                                enough
+                                                to run. Some of these are really cool and may be useful, but you may
+                                                experience
+                                                a few bugs and problems. However, if you find a lot of value in one of
+                                                these
+                                                projects, you can let us know and we just might finish the project.
+                                                Otherwise,
+                                                all the code is on GitHub and you are free to finish the project
+                                                yourself. </p>
+                                        <p> <i> TL;DR These are unfinished projects that might be useful </i></p>
+                                        <div class="relative">
+                                                <a href="../" class="w3-button w3-border w3-round-xlarge">Go to the Home
+                                                        Page</a>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <hr>
+
+
+
+
+
+
+
+
+
+                <!-- First Grid-->
+                <div class="w3-row-padding w3-padding-16 w3-center" id="1">
+
+                        <div class="w3-quarter">
+                                <img src="../Images/The_Crown_Joules.png" alt="The Crown Joules" style="width:100%"
+                                        class="w3-round-xlarge">
+
+                                <h3>The Crown Joules</h3>
+                                <p>How many Joules of energy can you get in 12 turns? Now with Muti-player</p>
+
+                                <div class="relative">
+                                        <a href="../CrownJoulesMultiplayer/"
+                                                class="w3-button  w3-round-xlarge w3-blue">Muti-Player</a>
+                                        <a href="https://play.google.com/store/apps/details?id=com.IC2020.CrownJoules9"
+                                                class="w3-button  w3-round-xlarge w3-blue">Android version</a>
+                                </div>
+                        </div>
+
+
+                        <div class="w3-quarter">
+                                <img src="../Images/ET2019.png" alt="Electron Transfer 2019" style="width:100%"
+                                        class="w3-round-xlarge">
+
+                                <h3>Electron Transfer 2019</h3>
+                                <p>Try out our particle simulator from 2019! Contains Redox reactions and ionic
+                                        reactions. Included in this version is a way for you to make your own
+                                        simulation.
+                                </p>
+
+                                <div class="relative">
+                                        <a href="../ElectronTransfer2019URLTest/"
+                                                class="w3-button  w3-round-xlarge w3-blue">Make your own
+                                                version</a>
+                                </div>
+                        </div>
+
+
+                        <div class="w3-quarter">
+                                <img src="../Images/Escape-Room.png" alt="Escape Room Prototype" style="width:100%"
+                                        class="w3-round-xlarge">
+
+                                <h3>Escape Room Prototype</h3>
+                                <p>A proof of concept for an escape room that has both flat screen controls and Virtual
+                                        Reality controls. </p>
+
+                                <div class="relative">
+                                        <a href="EscapeRoomPrototype/" class="w3-button  w3-round-xlarge w3-blue">Play
+                                                Now</a>
+                                        <a href="EscapeRoomPrototypeWebXR/"
+                                                class="w3-button  w3-round-xlarge w3-blue">WebXR</a>
+                                </div>
+                        </div>
+
+
+                        <div class="w3-quarter">
+                                <img src="../Images/PhysicsSimulation.png" alt="Physics Simulation" style="width:100%"
+                                        class="w3-round-xlarge">
+                                <h3>Physics Simulation</h3>
+                                <p>A proof of concept on
+                                        loading JSON files to a website. Meant to imitate <a
+                                                href="https://www.physicscurriculum.com/interactivephysics">Interactive
+                                                Physics</a></p>
+
+                                <div class="relative">
+                                        <a href="PhysicsSimulation/" class="w3-button  w3-round-xlarge w3-blue">Play
+                                                Now</a>
+                                        <a href="PhysicsSimulation/oscillation.json"
+                                                class="w3-button  w3-round-xlarge w3-blue">Download
+                                                example scene</a>
+                                </div>
+                        </div>
+
+
+                </div>
+
+
+
+
+
+
+
+                <!-- Second Grid-->
+
+
+
+
+
+
+
+                <div class="w3-row-padding w3-padding-16 w3-center" id="2">
+
+
+                        <div class="w3-quarter">
+                                <img src="../Images/Ayeeh.png" alt="Ayeeh!" style="width:100%" class="w3-round-xlarge">
+
+                                <h3>Ayeeh!</h3>
+                                <p>A fun and educational shoot-em-up game game about electrons. This is buggy but
+                                        feature complete. (development stopped)
+                                </p>
+
+                                <div class="relative">
+                                        <a href="Ayeeh/" class="w3-button  w3-round-xlarge w3-blue">Play
+                                                Now</a>
+                                </div>
+                        </div>
+
+
+                        <div class="w3-quarter">
+                                <img src="../Images/Photon_torpedoes.png" alt="Photon torpedoes" style="width:100%"
+                                        class="w3-round-xlarge">
+
+                                <h3>Photon torpedoes</h3>
+                                <p>Space invaders with atoms! (development put on hold)</p>
+
+                                <div class="relative">
+                                        <a href="Build Spaceinvaders/" class="w3-button  w3-round-xlarge w3-blue">Play
+                                                Now</a>
+                                </div>
+                        </div>
+
+
+
+                        <!-- <div class="w3-quarter">
+                                <img src="Images/IonicReactionSim2020.png" alt="Ionic Reaction Simulator 2020"
+                                        style="width:100%" class="w3-round-xlarge">
+
+                                <h3>Ionic Reaction Simulator 2020</h3>
+                                <p>Simulate ions reacting on your browser!</p>
+
+                                <div class="relative">
+                                        <a href="IonicReactionSimulatorWebGL/"
+                                                class="w3-button  w3-round-xlarge w3-blue">Play Now</a>
+                                </div>
+                        </div>
+
+
+                        <div class="w3-quarter">
+                                <img src="Images/Virtual-lab.png" alt="Virtual Lab" style="width:100%"
+                                        class="w3-round-xlarge">
+                                <h3>Virtual Lab</h3>
+                                <p>An interactive virtual lab for students to explore chemistry with real videos of the
+                                        reactions!</p>
+
+                                <div class="relative">
+                                        <a href="Virtual-lab/" class="w3-button  w3-round-xlarge w3-blue">Play Now</a>
+                                </div>
+                        </div> -->
+
+
+                </div>
+
+
+
+                <hr>
+
+
+
+
+
+                <!-- About Section -->
+
+                <div class="w3-container w3-padding-32 w3-center">
+
+                        <div class="w3-padding-large">
+                                <h2><b>About us</b></h2>
+                                <p>Since we were founded in 2019 to make the election transfer simulator, our team has
+                                        grown in size and ambitions. Out team mostly consists of high school students
+                                        and is lead by Mr. Sogo, a chemistry teacher at Laguna Beach High School. Our
+                                        mission is to provide free, open-source games and simulations to help teach
+                                        principles in chemistry and physics classrooms. Our focus is on web-based
+                                        applications so that all students can benefit whether they have a Chromebook,
+                                        Apple Mac, or Windows based device. However, we are interested in new technology
+                                        like virtual reality. Most of these experiments can be seen on the experiments
+                                        page. All else can be seen here on the main page. If you have any feedback, want
+                                        to report any problems with out website, or just want to say "thank you," our
+                                        contact information is listed at the bottom of the page.
+                                </p>
+                        </div>
+                </div>
+                <hr>
+
+
+
+
+
+
+
+                <!-- Footer -->
+
+                <footer class="w3-row-padding w3-padding-32">
+
+                        <!-- Contact us -->
+                        <div class="w3-half">
+                                <h2>Contact us</h2>
+                                <p>Have you found a problem or bug with our website? Please let us know <a
+                                                href="https://docs.google.com/forms/d/e/1FAIpQLSfGF4RMAOoKrB5RMPaLna-zKHaA5kyqlsKMohkRE3DGdrII-Q/viewform">here</a>
+                                </p>
+                                <p>Do you have a suggestion for a new feature or future software? Please let us know <a
+                                                href="https://docs.google.com/forms/d/e/1FAIpQLSehVnJdTg3HCtr2ZOoazfxO90DRS5VEV3kEpLbx1EAZCSsvAA/viewform">here</a>
+                                </p>
+                                <p>Otherwise, please email us at <a
+                                                href="mailto:lbhsic2020@gmail.com">lbhsic2020@gmail.com</a>
+                                </p>
+
+                        </div>
+
+
+                        <!-- Links -->
+                        <div class="w3-half">
+                                <h2>Links</h2>
+                                <ul class="w3-ul w3-hoverable">
+
+                                        <li onclick="location.href='https://github.com/lbhs/';"
+                                                class="w3-padding-16 button2" tabindex="0">
+
+                                                <!-- Dark/light images -->
+                                                <!-- <picture>
+                                                        <source srcset="Images/GitHub-Mark-Light-32px.png"
+                                                                media="(prefers-color-scheme: dark)" />
+                                                        <source srcset="Images/GitHub-Mark-32px.png"
+                                                                media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+                                                        <img src="Images/GitHub-Mark-32px.png"
+                                                                class="w3-left w3-margin-right" style="width:30px">
+                                                </picture> -->
+
+                                                <span class="w3-large">GitHub</span><br>
+                                        </li>
+
+                                        <li onclick="location.href='https://www.youtube.com/channel/UCSk934KJ8kgDXH1h3xTcNgQ';"
+                                                class="w3-padding-16 button2" tabindex="0">
+                                                <span class="w3-large">YouTube</span><br>
+                                        </li>
+
+                                        <li onclick="location.href='https://play.google.com/store/apps/dev?id=7457309812591033757';"
+                                                class="w3-padding-16 button2" tabindex="0">
+                                                <span class="w3-large">View on Google Play</span><br>
+                                        </li>
+
+                                </ul>
+                        </div>
+
+                </footer>
+
+
+
+
+
+
+
+
+                <div class="w3-center">
+
+                        <br>
+                        <small>Google Play and the Google Play logo are trademarks of Google
+                                LLC.</small>
+                        <br>
+                        <small>Template provided by <a href="https://www.w3schools.com/w3css/default.asp"
+                                        target="_blank">w3.css</a>
+                        </small>
+                </div>
+                <!-- End page content -->
+        </div>
+
+        <!-- Tags for reference -->
+        <!-- <div class="w3-third w3-serif">
+        <h3>Tags</h3>
+        <p>
+                <span class="w3-tag w3-blackDynamic w3-margin-bottom">Educational games</span>
+                <span class="w3-tag w3-blackDynamic w3-margin-bottom">Classroom</span>
+                <span class="w3-tag w3-blackDynamic w3-margin-bottom">School</span>
+                <span class="w3-tag w3-blackDynamic w3-small w3-margin-bottom">Chemistry</span>
+                <span
+                class="w3-tag w3-blackDynamic w3-small w3-margin-bottom">Simulations</span>
+                <span class="w3-tag w3-blackDynamic w3-small w3-margin-bottom">Distance
+                        Learning</span> <span
+                        class="w3-tag w3-blackDynamic w3-small w3-margin-bottom">Teaching
+                        Materials</span>
+                        <span class="w3-tag w3-blackDynamic w3-small w3-margin-bottom">Puzzles</span>
+                        <span class="w3-tag w3-blackDynamic w3-small w3-margin-bottom">Fun</span> <span
+                        class="w3-tag w3-blackDynamic w3-small w3-margin-bottom">2D</span> <span
+                        class="w3-tag w3-blackDynamic w3-small w3-margin-bottom">3D</span>
+                        <span class="w3-tag w3-blackDynamic w3-small w3-margin-bottom">Virtual
+                                Reality</span> <span
+                                class="w3-tag w3-blackDynamic w3-small w3-margin-bottom">HTML5/WebGL</span>
+                                        <span
+                                                class="w3-tag w3-blackDynamic w3-small w3-margin-bottom">Programming</span>
+                                                <span class="w3-tag w3-blackDynamic w3-small w3-margin-bottom">Physics</span>
+                                        <span class="w3-tag w3-blackDynamic w3-small w3-margin-bottom">Covid-19
+                                                activity</span>
+                                </p>
+                        </div> -->
 </body>
 
 </html>

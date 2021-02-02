@@ -1,146 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="icon" href="favicon.ico">
+<title>
+    Interactive Chemistry Lunar Lander
+</title>
+<meta name=" description" content="
+We are a group of student developers making educational games and simulations 
+for Chromebooks, Mac, and Windows devices. We specialize in Chemistry and Physics.
+">
+<!-- <meta name="Keywords" content="
+We are a group of developers making educational games and simulations.
+"> -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Karma", sans-serif
+    }
 
-<head>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>IC 2020</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-</head>
+    .w3-bar-block .w3-bar-item {
+        padding: 20px
+    }
+</style>
 
 <body>
-    <div class="container-fluid">
-        <div class="jumbotron" style="padding-bottom: .25rem; padding-top: .75rem;">
-            <h2>
-                Lunar Lander
-            </h2>
-            <p>
-            </p>
-            <p>
 
-            </p>
-
-        </div>
-
-
-
-
-
-
-
-
-        <!----------------------------------------------------- row one----------------------------------------------------------------------->
-        <div class="row">
-            <!--------------------------------------------------------------------------------------------------------------------->
-            <div class="col-sm-4">
-                <div class="card" style="width: 18rem;">
-                    <!--<a href="Claire"><img class="card-img-top" src="../Images/ComingSoon.png"
-                                                    alt="Claire"></a>-->
-                    <div class="card-body">
-                        <h5 class="card-title">Claire</h5>
-                        <a href="Claire" class="btn btn-primary">Play Now!</a>
-                    </div>
-                </div>
-            </div>
-            <!--------------------------------------------------------------------------------------------------------------------->
-            <!--------------------------------------------------------------------------------------------------------------------->
-            <div class="col-sm-4">
-                <div class="card" style="width: 18rem;">
-                    <!--<a href="Claire"><img class="card-img-top" src="../Images/ComingSoon.png"
-                                                    alt="Claire"></a>-->
-                    <div class="card-body">
-                        <h5 class="card-title">Eliyah</h5>
-                        <a href="Eliyah" class="btn btn-primary">Play Now!</a>
-                    </div>
-                </div>
-            </div>
-            <!--------------------------------------------------------------------------------------------------------------------->
-            <!--------------------------------------------------------------------------------------------------------------------->
-            <div class="col-sm-4">
-                <div class="card" style="width: 18rem;">
-                    <!--<a href="Claire"><img class="card-img-top" src="../Images/ComingSoon.png"
-                                                    alt="Claire"></a>-->
-                    <div class="card-body">
-                        <h5 class="card-title">Liela</h5>
-                        <a href="Liela" class="btn btn-primary">Play Now!</a>
-                    </div>
-                </div>
-            </div>
-            <!--------------------------------------------------------------------------------------------------------------------->
-        </div>
-        <!----------------------------------------------------- row one end------------------------------------------------------------------->
-
-
-
-        <!----------------------------------------------------- row two----------------------------------------------------------------------->
-        <div class="row" style="margin-top:2rem;">
-            <!--------------------------------------------------------------------------------------------------------------------->
-            <div class="col-sm-4">
-                <div class="card" style="width: 18rem;">
-                    <!--<a href="Claire"><img class="card-img-top" src="../Images/ComingSoon.png"
-                                                    alt="Claire"></a>-->
-                    <div class="card-body">
-                        <h5 class="card-title">Nicholas</h5>
-                        <a href="Nicholas" class="btn btn-primary">Play Now!</a>
-                    </div>
-                </div>
-            </div>
-            <!--------------------------------------------------------------------------------------------------------------------->
-            <!--------------------------------------------------------------------------------------------------------------------->
-            <div class="col-sm-4">
-                <div class="card" style="width: 18rem;">
-                    <!--<a href="Claire"><img class="card-img-top" src="../Images/ComingSoon.png"
-                                                    alt="Claire"></a>-->
-                    <div class="card-body">
-                        <h5 class="card-title">Haylee</h5>
-                        <a href="Haylee" class="btn btn-primary">Not ready yet</a>
-                    </div>
-                </div>
-            </div>
-            <!--------------------------------------------------------------------------------------------------------------------->
-            <!--------------------------------------------------------------------------------------------------------------------->
-            <div class="col-sm-4">
-                <div class="card" style="width: 18rem;">
-                    <!-- <a href="Group Build"><img class="card-img-top" src="../Images/ComingSoon.png"
-                                                    alt="Claire"></a> -->
-                    <div class="card-body">
-                        <h5 class="card-title">Group Build</h5>
-                        <a href="GroupBuild" class="btn btn-primary">Play Now!</a>
-                    </div>
-                </div>
-            </div>
-            <!--------------------------------------------------------------------------------------------------------------------->
-        </div>
-        <!----------------------------------------------------- row two end------------------------------------------------------------------->
-
-
-        <!-- 
-        <p></P>
-        <p></P>
-        <a href="archive">View the archive here</a>
-        <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
- -->
-
-
-
-
-
+    <!-- Top menu -->
+    <div class="w3-center w3-top w3-whiteDynamic w3-padding-16">
+        <h1>
+            <a href="../">
+                <!-- Dark/light images -->
+                <picture>
+                    <source srcset="../Images/IC2020logoLightOnDarkCrop.png" media="(prefers-color-scheme: dark)" />
+                    <source srcset="../Images/IC2020logoDarkOnLightCrop.png"
+                        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+                    <img src="../Images/IC2020logoLightOnDarkCrop.png" alt="Interactive Chemistry" style="width:200px ">
+                </picture>
+            </a>
+        </h1>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+        <div class="w3-center">
+            <h2><b>Lunar Lander</b></h2>
+        </div>
+
+
+        <div class="w3-center">
+
+            <h3>Group Build</h3>
+
+
+            <div class="relative">
+                <a href="GroupBuild/" class="w3-button  w3-round-xlarge w3-blue">Play Now</a>
+
+            </div>
+        </div>
+        <br>
+        <hr class="dynamic">
+
+        <!-- First Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="1">
+            <h3>Individual Builds</h3>
+            <div class="w3-quarter">
+
+                <h3>Claire</h3>
+
+                <div class="relative">
+                    <a href="Claire/" class="w3-button  w3-round-xlarge w3-blue">Play Now</a>
+
+                </div>
+            </div>
+
+
+            <div class="w3-quarter">
+
+                <h3>Eliyah</h3>
+
+                <div class="relative">
+                    <a href="Eliyah/" class="w3-button  w3-round-xlarge w3-blue">Play Now</a>
+
+                </div>
+            </div>
+
+            <div class="w3-quarter">
+
+                <h3>Liela</h3>
+
+                <div class="relative">
+                    <a href="Liela/" class="w3-button  w3-round-xlarge w3-blue">Play Now</a>
+
+                </div>
+            </div>
+            <div class="w3-quarter">
+
+                <h3>Nicholas</h3>
+
+                <div class="relative">
+                    <a href="Nicholas/" class="w3-button  w3-round-xlarge w3-blue">Play Now</a>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
 
 </body>
 

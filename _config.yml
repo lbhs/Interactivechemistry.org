@@ -8,3 +8,5 @@ relative_links:
 include:
   - index.md
 theme: jekyll-theme-slate
+# Google Analytics
+google_analytics: G-Y8XTEY4S1B

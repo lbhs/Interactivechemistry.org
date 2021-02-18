@@ -12,22 +12,20 @@ https://github.com/sno/unity-webgl-responsive
 <!DOCTYPE html>
 <html lang="en-us">
 
-
-
 <link rel="icon" href="/favicon.ico">
 <title>
   2-D Molecular Model Kit | Interactive Chemistry
 </title>
 <meta name=" description" content="
 
-This game allows you to bond atoms together to create molecules using 21st Century Lewis Dot Models.
+Bond atoms together to create molecules using 21st Century Lewis Dot Models!
 
 ">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>2-D Molecular Models</title>
+  <title>%UNITY_WEB_NAME%</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -39,7 +37,7 @@ This game allows you to bond atoms together to create molecules using 21st Centu
   <script src="assets/js/jquery-3.4.1.min.js"></script>
 
   <!-- unity resources -->
-  <script src="Build/UnityLoader.js"></script>
+  <script src="%UNITY_WEBGL_LOADER_URL%"></script>
 
   <script>
     // instantiate webgl only if we're not on a touch device
@@ -47,7 +45,7 @@ This game allows you to bond atoms together to create molecules using 21st Centu
     var isTouch = ('ontouchstart' in document.documentElement);
 
     if (!isTouch) {
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Feb17ResponsiveBuild.json");
+      var unityInstance = UnityLoader.instantiate("unityContainer", "%UNITY_WEBGL_BUILD_URL%");
     }
   </script>
 
@@ -62,7 +60,6 @@ This game allows you to bond atoms together to create molecules using 21st Centu
 </head>
 
 <body>
-
   <!-- Top menu -->
   <div class="w3-center  w3-whiteDynamic ">
     <h2>
@@ -82,7 +79,7 @@ This game allows you to bond atoms together to create molecules using 21st Centu
   <div class="w3-main w3-content  w3-whiteDynamic" style="max-width:1200px;margin-top:0px">
     <div class="webgl-wrapper">
       <div class="webgl-content">
-        <div id="unityContainer" style="width:1280px; height: 720px;"></div>
+        <div id="unityContainer" style="width:%UNITY_WIDTH%px; height: %UNITY_HEIGHT%px;"></div>
       </div>
 
       <div>
@@ -99,9 +96,11 @@ This game allows you to bond atoms together to create molecules using 21st Centu
       <h1>2-Dimensional Molecular Model Kit</h1>
       <!-- <h4>OPTIONAL TAG LINE</h4> -->
       <p>
-        This game allows you to bond atoms together to create molecules using 21st Century Lewis Dot Models.
-		You can build molecules containing carbon, hydrogen, oxygen, nitrogen, and chlorine atoms.  Molecules can range from 2 atoms up to 16 atoms!
-		The interface is intuitive and visually pleasing, and sound effects are used to provide encouragement.
+        In this simulator, students bond atoms together to create MOLECULES using 21st Century Lewis Dot Models.<br>
+		Available atoms include carbon, hydrogen, oxygen, nitrogen, and chlorine.  Molecule sizes can range from 2 atoms up to 10 or more atoms!<br>
+		The interface is intuitive and visually pleasing, with added sound effects to provide encouragement.<br>
+		Suggested Lessons:<br>.    <a href="https://docs.google.com/document/d/1ZKFQIooW2owLlv1a5xidpTiSN5NTOu90vQ2FCrh87Co/edit?usp=sharing">Molecular Structures Part 1</a>  <br>
+		   ..    <a href="https://docs.google.com/document/d/1TIU-xmJIr6cXRXvOBkk8_e8MnHzwR_kH4hYVFojSgSk/edit?usp=sharing">Molecular Structures Part 2</a>  
       </p>
 
       <br>
@@ -207,7 +206,6 @@ This game allows you to bond atoms together to create molecules using 21st Centu
       <br>
       <small>Template provided by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
       </small>
-
     </div>
   </div>
 </body>

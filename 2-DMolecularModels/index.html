@@ -25,7 +25,7 @@ Bond atoms together to create molecules using 21st Century Lewis Dot Models!
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>%UNITY_WEB_NAME%</title>
+  <title>2-D Molecular Models</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -37,7 +37,7 @@ Bond atoms together to create molecules using 21st Century Lewis Dot Models!
   <script src="assets/js/jquery-3.4.1.min.js"></script>
 
   <!-- unity resources -->
-  <script src="%UNITY_WEBGL_LOADER_URL%"></script>
+  <script src="Build/UnityLoader.js"></script>
 
   <script>
     // instantiate webgl only if we're not on a touch device
@@ -45,7 +45,7 @@ Bond atoms together to create molecules using 21st Century Lewis Dot Models!
     var isTouch = ('ontouchstart' in document.documentElement);
 
     if (!isTouch) {
-      var unityInstance = UnityLoader.instantiate("unityContainer", "%UNITY_WEBGL_BUILD_URL%");
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Feb18ResponsiveBuild.json");
     }
   </script>
 
@@ -79,7 +79,7 @@ Bond atoms together to create molecules using 21st Century Lewis Dot Models!
   <div class="w3-main w3-content  w3-whiteDynamic" style="max-width:1200px;margin-top:0px">
     <div class="webgl-wrapper">
       <div class="webgl-content">
-        <div id="unityContainer" style="width:%UNITY_WIDTH%px; height: %UNITY_HEIGHT%px;"></div>
+        <div id="unityContainer" style="width:1280px; height: 720px;"></div>
       </div>
 
       <div>

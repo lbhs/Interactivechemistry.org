@@ -25,14 +25,15 @@ a {
 
 .webgl-wrapper {
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 144vh;
+  max-height: 81vh
+  margin: 60 auto;
+  padding: 20px 0px;
   box-sizing: border-box;
 }
 
 #unityContainer {
-  width: 62vw; height: calc((9/16)*62vw);
+  width: 144vh; height: 81vh;
 }
 
 .webgl-content * {

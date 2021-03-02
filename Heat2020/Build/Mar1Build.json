@@ -1,0 +1,16 @@
+{
+"companyName": "IC2020",
+"productName": "Models of Heat Transfer",
+"productVersion": "2.0",
+"dataUrl": "Mar1Build.data.unityweb",
+"wasmCodeUrl": "Mar1Build.wasm.code.unityweb",
+"wasmFrameworkUrl": "Mar1Build.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.4f1"
+}

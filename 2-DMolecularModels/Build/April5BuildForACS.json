@@ -1,0 +1,16 @@
+{
+"companyName": "IC2020",
+"productName": "2-D Molecular Model Kit",
+"productVersion": "1.0",
+"dataUrl": "April5BuildForACS.data.unityweb",
+"wasmCodeUrl": "April5BuildForACS.wasm.code.unityweb",
+"wasmFrameworkUrl": "April5BuildForACS.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.4f1"
+}

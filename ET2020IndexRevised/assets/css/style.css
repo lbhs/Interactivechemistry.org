@@ -25,7 +25,7 @@ a {
 
 .webgl-wrapper {
   width: 100%;
-  max-width: 70%;
+  max-width: 70vw;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;

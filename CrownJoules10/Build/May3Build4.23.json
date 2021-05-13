@@ -1,0 +1,16 @@
+{
+"companyName": "IC2020",
+"productName": "CrownJoules10",
+"productVersion": "10.0",
+"dataUrl": "May3Build4.23.data.unityweb",
+"wasmCodeUrl": "May3Build4.23.wasm.code.unityweb",
+"wasmFrameworkUrl": "May3Build4.23.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.23f1"
+}

@@ -1,0 +1,16 @@
+{
+"companyName": "IC2020",
+"productName": "Combustion Reactions",
+"productVersion": "1.0",
+"dataUrl": "4.3 C3H8 and O2 build.data.unityweb",
+"wasmCodeUrl": "4.3 C3H8 and O2 build.wasm.code.unityweb",
+"wasmFrameworkUrl": "4.3 C3H8 and O2 build.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.23f1"
+}

@@ -1,0 +1,210 @@
+<!--
+unity webgl responsive
+
+template by dom
+dom@crowscrowscrows.com
+https://twitter.com/zerstoerer
+
+source code on github
+https://github.com/sno/unity-webgl-responsive
+-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<link rel="icon" href="/favicon.ico">
+<title>
+  Photosynthesis | Interactive Chemistry
+</title>
+<meta name=" description" content="
+
+Break bonds with solar energy to form HIGH ENERGY product molecules!
+">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Photosynthesis</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+
+  <!-- unity resources -->
+  <script src="Build/UnityLoader.js"></script>
+
+  <script>
+    // instantiate webgl only if we're not on a touch device
+
+    var isTouch = ('ontouchstart' in document.documentElement);
+
+    if (!isTouch) {
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/June9AlternativePhotosynthesis(Scene2Propene).json");
+    }
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8XTEY4S1B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y8XTEY4S1B');
+  </script>
+</head>
+
+<body class="vsc-initialized">
+  <!-- Top menu -->
+  <div class="w3-center  w3-whiteDynamic ">
+    <h2>
+      <!-- Dark/light images -->
+      <a href="/">
+        <picture>
+          <source srcset="/Images/IC2020logoLightOnDarkCrop.png" media="(prefers-color-scheme: dark)" />
+          <source srcset="/Images/IC2020logoDarkOnLightCrop.png"
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+          <img src="/Images/IC2020logoLightOnDarkCrop.png" alt="Interactive Chemistry" style="width:200px ">
+        </picture>
+      </a>
+    </h2>
+  </div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main w3-whiteDynamic">
+    <div class="webgl-wrapper">
+      <div class="webgl-content">
+        <div id="unityContainer" style="width:1280px; height: 720px;"></div>
+      </div>
+
+      <div>
+        <div class="relative w3-right-align w3-padding-16">
+          <a href="#" onclick="unityInstance.SetFullscreen(1)" class="w3-button  w3-round-xlarge w3-blue">Fullscreen</a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="w3-main w3-content  w3-whiteDynamic" style="max-width:1200px;margin-top:0px">
+
+
+      <div class="info">
+        <h1>Photosynthesis</h1>
+        <!-- <h4>OPTIONAL TAG LINE</h4> -->
+        <p>
+          Using 21st Century Lewis Dot Models, students will investigate the energetics of the Photosynthesis Reaction.  This simulation allows students to create a three carbon sugar (glyceraldehyde). 
+        </p>
+
+        <br>
+        <p>
+          You can view the source code for this simulation on our <a href="https://github.com/lbhs">Github</a>
+        </p>
+
+        <br>
+
+        <div class="w3-center relative">
+          <a href="/" class="w3-button w3-border w3-round-xlarge">Go to the Home
+            Page</a>
+        </div>
+
+
+      </div>
+
+      <!-- feel free to remove all credits! -->
+      <!-- <div class="info">
+      <p>source code on <a href="https://github.com/sno/unity-webgl-responsive">github</a></p>
+      <p>template by dom / <a href="https://twitter.com/zerstoerer">@zerstoerer</a></p>
+    </div> -->
+
+      <script src="assets/js/app.js"></script>
+
+
+
+
+
+
+
+
+      <hr class="dynamic">
+
+
+
+      <footer class="w3-row-padding w3-padding-32">
+
+        <!-- Contact us -->
+        <div class="w3-half">
+          <h2>Contact us</h2>
+          <p>Have you found a problem or bug with our website? Please let us know <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfGF4RMAOoKrB5RMPaLna-zKHaA5kyqlsKMohkRE3DGdrII-Q/viewform">here</a>
+          </p>
+          <br>
+          <p>Do you have a suggestion for a new feature or future software? Please let us know <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSehVnJdTg3HCtr2ZOoazfxO90DRS5VEV3kEpLbx1EAZCSsvAA/viewform">here</a>
+          </p>
+          <br>
+          <p>Otherwise, please email us at <a href="mailto:lbhsic2020@gmail.com">lbhsic2020@gmail.com</a>
+          </p>
+
+        </div>
+
+    </div>
+    <!-- Links -->
+    <!-- <div class="w3-half">
+        <h2>Links</h2>
+        <ul class="w3-ul w3-hoverable">
+
+          <li onclick="location.href='https://github.com/lbhs/';" class="w3-padding-16 button2" tabindex="0"> -->
+
+    <!-- Dark/light images -->
+    <!-- <picture>
+                                                            <source srcset="Images/GitHub-Mark-Light-32px.png"
+                                                                    media="(prefers-color-scheme: dark)" />
+                                                            <source srcset="Images/GitHub-Mark-32px.png"
+                                                                    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+                                                            <img src="Images/GitHub-Mark-32px.png"
+                                                                    class="w3-left w3-margin-right" style="width:30px">
+                                                    </picture> -->
+
+    <!-- <span class="w3-large">GitHub</span><br>
+          </li>
+
+          <li onclick="location.href='https://www.youtube.com/channel/UCSk934KJ8kgDXH1h3xTcNgQ';"
+            class="w3-padding-16 button2" tabindex="0">
+            <span class="w3-large">YouTube</span><br>
+          </li>
+
+          <li onclick="location.href='https://play.google.com/store/apps/dev?id=7457309812591033757';"
+            class="w3-padding-16 button2" tabindex="0">
+            <span class="w3-large">View on Google Play</span><br>
+          </li>
+
+        </ul>
+      </div> -->
+
+    </footer>
+
+
+
+
+
+
+
+
+    <div class="w3-center">
+
+      <br>
+      <small>Google Play and the Google Play logo are trademarks of Google
+        LLC.</small>
+      <br>
+      <small>Template provided by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+      </small>
+    </div>
+  </div>
+</body>
+
+</html>

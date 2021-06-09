@@ -1,0 +1,16 @@
+{
+"companyName": "IC2020",
+"productName": "Photosynthesis Makes Glucose!",
+"productVersion": "2.0",
+"dataUrl": "Mar9Glucose.data.unityweb",
+"wasmCodeUrl": "Mar9Glucose.wasm.code.unityweb",
+"wasmFrameworkUrl": "Mar9Glucose.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.4f1"
+}

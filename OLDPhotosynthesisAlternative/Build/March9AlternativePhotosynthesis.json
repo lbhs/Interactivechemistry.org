@@ -1,0 +1,16 @@
+{
+"companyName": "IC2020",
+"productName": "Alternative Photosynthesis",
+"productVersion": "2.0",
+"dataUrl": "March9AlternativePhotosynthesis.data.unityweb",
+"wasmCodeUrl": "March9AlternativePhotosynthesis.wasm.code.unityweb",
+"wasmFrameworkUrl": "March9AlternativePhotosynthesis.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.4f1"
+}

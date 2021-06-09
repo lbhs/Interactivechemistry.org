@@ -1,0 +1,16 @@
+{
+"companyName": "IC2020",
+"productName": "Photosynthesis",
+"productVersion": "2.0",
+"dataUrl": "June9AlternativePhotosynthesis(Scene2Propene).data.unityweb",
+"wasmCodeUrl": "June9AlternativePhotosynthesis(Scene2Propene).wasm.code.unityweb",
+"wasmFrameworkUrl": "June9AlternativePhotosynthesis(Scene2Propene).wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.23f1"
+}

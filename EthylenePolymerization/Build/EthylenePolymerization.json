@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Polymerization",
+"productVersion": "0.1",
+"dataUrl": "EthylenePolymerization.data.unityweb",
+"wasmCodeUrl": "EthylenePolymerization.wasm.code.unityweb",
+"wasmFrameworkUrl": "EthylenePolymerization.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.23f1"
+}

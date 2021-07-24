@@ -23,78 +23,75 @@ https://github.com/sno/unity-webgl-responsive
 
 <link rel="icon" href="/favicon.ico">
 <title>
-  Combustion Reactions | Interactive Chemistry
+    Combustion Reactions | Interactive Chemistry
 </title>
 <meta name="description" content="
-
-This game simulates combustion reactions involving fuels such as methane and propane.  Users apply the concepts of Activation Energy and Conservation of Energy as they invest energy to break bonds and release energy when forming bonds.
-Molecules are represented using 21st Century Lewis Dot Models to form structures such class=" "CO<sub>2</sub> and H<sub>2</sub>O.
-Potential Energy in atoms and Heat Energy are clearly related using "Jewels" as representations of energy.
-
+      This game simulates combustion reactions involving fuels such as methane and propane. Users apply the concepts of Activation Energy and Conservation of Energy as they invest energy to break bonds and release energy when forming bonds.
+      Molecules are represented using 21st Century Lewis Dot Models to form structures such CO<sub>2</sub> and H<sub>2</sub>O. Potential Energy in atoms and Heat Energy are clearly related using "Jewels" as representations of energy.
 ">
 
 <!--
 
-  _         _                   _   _       _                                 
- (_)       | |                 ( ) | |     | |                                
-  _      __| |   ___    _ __   |/  | |_    | | __  _ __     ___   __      __  
- | |    / _` |  / _ \  | '_ \      | __|   | |/ / | '_ \   / _ \  \ \ /\ / /  
- | |   | (_| | | (_) | | | | |     | |_    |   <  | | | | | (_) |  \ V  V /   
- |_|    \__,_|  \___/  |_| |_|      \__|   |_|\_\ |_| |_|  \___/    \_/\_/    
-                                                                              
-                                                                              
-             _               _       _                              _   _     
-            | |             | |     | |                            | | | |    
- __      __ | |__     __ _  | |_    | |_    ___       ___    __ _  | | | |    
- \ \ /\ / / | '_ \   / _` | | __|   | __|  / _ \     / __|  / _` | | | | |    
-  \ V  V /  | | | | | (_| | | |_    | |_  | (_) |   | (__  | (_| | | | | |    
-   \_/\_/   |_| |_|  \__,_|  \__|    \__|  \___/     \___|  \__,_| |_| |_|    
-                                                                              
-                                                                              
-  _     _       _                               _     _                       
- | |   | |     (_)                             | |   (_)                      
- | |_  | |__    _   ___     ___    ___    ___  | |_   _    ___    _ __        
- | __| | '_ \  | | / __|   / __|  / _ \  / __| | __| | |  / _ \  | '_ \       
- | |_  | | | | | | \__ \   \__ \ |  __/ | (__  | |_  | | | (_) | | | | |      
-  \__| |_| |_| |_| |___/   |___/  \___|  \___|  \__| |_|  \___/  |_| |_|      
-                                                                              
-                                                                              
+  _         _                   _   _       _
+ (_)       | |                 ( ) | |     | |
+  _      __| |   ___    _ __   |/  | |_    | | __  _ __     ___   __      __
+ | |    / _` |  / _ \  | '_ \      | __|   | |/ / | '_ \   / _ \  \ \ /\ / /
+ | |   | (_| | | (_) | | | | |     | |_    |   <  | | | | | (_) |  \ V  V /
+ |_|    \__,_|  \___/  |_| |_|      \__|   |_|\_\ |_| |_|  \___/    \_/\_/
+
+
+             _               _       _                              _   _
+            | |             | |     | |                            | | | |
+ __      __ | |__     __ _  | |_    | |_    ___       ___    __ _  | | | |
+ \ \ /\ / / | '_ \   / _` | | __|   | __|  / _ \     / __|  / _` | | | | |
+  \ V  V /  | | | | | (_| | | |_    | |_  | (_) |   | (__  | (_| | | | | |
+   \_/\_/   |_| |_|  \__,_|  \__|    \__|  \___/     \___|  \__,_| |_| |_|
+
+
+  _     _       _                               _     _
+ | |   | |     (_)                             | |   (_)
+ | |_  | |__    _   ___     ___    ___    ___  | |_   _    ___    _ __
+ | __| | '_ \  | | / __|   / __|  / _ \  / __| | __| | |  / _ \  | '_ \
+ | |_  | | | | | | \__ \   \__ \ |  __/ | (__  | |_  | | | (_) | | | | |
+  \__| |_| |_| |_| |___/   |___/  \___|  \___|  \__| |_|  \___/  |_| |_|
+
+
  -->
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Combustion Reactions</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Combustion Reactions</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-  <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
 
-  <!-- unity resources -->
-  <script src="Build/UnityLoader.js"></script>
+    <!-- unity resources -->
+    <script src="Build/UnityLoader.js"></script>
 
-  <script>
-    // instantiate webgl only if we're not on a touch device
-    var isTouch = ('ontouchstart' in document.documentElement);
-    if (!isTouch) {
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/BuildForChemEdJuly2021.json");
-    }
-  </script>
+    <script>
+        // instantiate webgl only if we're not on a touch device
+        var isTouch = ('ontouchstart' in document.documentElement);
+        if (!isTouch) {
+            var unityInstance = UnityLoader.instantiate("unityContainer", "Build/BuildForChemEdJuly2021.json");
+        }
+    </script>
 
-  <!-- google analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8XTEY4S1B"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- google analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8XTEY4S1B"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-Y8XTEY4S1B');
-  </script>
+        gtag('config', 'G-Y8XTEY4S1B');
+    </script>
 </head>
 
 <body class="vsc-initialized">
@@ -112,7 +109,7 @@ Potential Energy in atoms and Heat Energy are clearly related using "Jewels" as 
         </h2>
     </div>
     <!--
-        
+
     _____                                                        _                    _
     |  __ \                                                      | |                  | |
     | |__) |   __ _    __ _    ___          ___    ___    _ __   | |_    ___   _ __   | |_
@@ -234,8 +231,6 @@ Potential Energy in atoms and Heat Energy are clearly related using "Jewels" as 
   <p>source code on <a href="https://github.com/sno/unity-webgl-responsive">github</a></p>
   <p>template by dom / <a href="https://twitter.com/zerstoerer">@zerstoerer</a></p>
 </div> -->
-
-
 <!-- Big text made with http://patorjk.com/software/taag/#p=display&h=0&v=0&f=Big&t= -->
 
 </html>

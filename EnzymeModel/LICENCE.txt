@@ -1,0 +1,2 @@
+WebGL Template by https://github.com/sno/unity-webgl-responsive
+w3.css Template by https://www.w3schools.com/w3css/default.asp

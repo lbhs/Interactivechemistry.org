@@ -1,6 +1,6 @@
 {
-"companyName": "DefaultCompany",
-"productName": "EnzymeModel",
+"companyName": "IC2020",
+"productName": "Enzyme Model",
 "productVersion": "0.1",
 "dataUrl": "EnzymeModel.data.unityweb",
 "wasmCodeUrl": "EnzymeModel.wasm.code.unityweb",

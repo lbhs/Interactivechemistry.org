@@ -1,0 +1,16 @@
+{
+"companyName": "IC2020",
+"productName": "Sucrose Hydrolysis with Catalyst",
+"productVersion": "1.0",
+"dataUrl": "EnzymeBuildNov22.data.unityweb",
+"wasmCodeUrl": "EnzymeBuildNov22.wasm.code.unityweb",
+"wasmFrameworkUrl": "EnzymeBuildNov22.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.23f1"
+}

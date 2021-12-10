@@ -1,0 +1,16 @@
+{
+"companyName": "IC2020",
+"productName": "Cell Model",
+"productVersion": "1.0",
+"dataUrl": "PacMan1.0.data.unityweb",
+"wasmCodeUrl": "PacMan1.0.wasm.code.unityweb",
+"wasmFrameworkUrl": "PacMan1.0.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.23f1"
+}

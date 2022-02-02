@@ -1,0 +1,16 @@
+{
+"companyName": "IC2020",
+"productName": "Alginate Crosslinking",
+"productVersion": "1.0",
+"dataUrl": "New folder.data.unityweb",
+"wasmCodeUrl": "New folder.wasm.code.unityweb",
+"wasmFrameworkUrl": "New folder.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.23f1"
+}

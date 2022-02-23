@@ -1,7 +1,7 @@
 {
 "companyName": "IC2020",
-"productName": "2-D Molecular Model Kit",
-"productVersion": "1.0",
+"productName": "Covalent Bonding with 21st Century Lewis Dots",
+"productVersion": "2.0",
 "dataUrl": "2-DMolecularModelBuild.data.unityweb",
 "wasmCodeUrl": "2-DMolecularModelBuild.wasm.code.unityweb",
 "wasmFrameworkUrl": "2-DMolecularModelBuild.wasm.framework.unityweb",

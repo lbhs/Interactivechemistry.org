@@ -1,0 +1,16 @@
+{
+"companyName": "IC2020",
+"productName": "Covalent Bonding with 21st Century Lewis Dots",
+"productVersion": "2.0",
+"dataUrl": "BuildWithDoubleBondsOnly.data.unityweb",
+"wasmCodeUrl": "BuildWithDoubleBondsOnly.wasm.code.unityweb",
+"wasmFrameworkUrl": "BuildWithDoubleBondsOnly.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.23f1"
+}

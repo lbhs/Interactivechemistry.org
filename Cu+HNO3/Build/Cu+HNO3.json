@@ -1,0 +1,16 @@
+{
+"companyName": "IC2020",
+"productName": "Matchmaker with Electron Transfer",
+"productVersion": "1.0",
+"dataUrl": "Cu+HNO3.data.unityweb",
+"wasmCodeUrl": "Cu+HNO3.wasm.code.unityweb",
+"wasmFrameworkUrl": "Cu+HNO3.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.23f1"
+}

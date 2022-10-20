@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 unity webgl responsive
 
 template by dom
@@ -27,7 +27,7 @@ https://github.com/sno/unity-webgl-responsive
 </title>
 <meta name="description" content="
 
-A digital sandbox in which users investigate molecular interactions using simple controls.
+A digital sandbox in which users investigate molecular interactions using simple controls.  Models to investigate Phase Transitions, Evaporation of a Liquid, and Solute-Solvent interactions are included.
 
 ">
 
@@ -80,7 +80,7 @@ A digital sandbox in which users investigate molecular interactions using simple
     // instantiate webgl only if we're not on a touch device
     var isTouch = ('ontouchstart' in document.documentElement);
     if (!isTouch) {
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/ChemLEAP1.0.json");
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/ChemLEAP_4Scenes.json");
     }
   </script>
 
@@ -124,8 +124,10 @@ A digital sandbox in which users investigate molecular interactions using simple
             <h1>ChemLEAP Digital Sandbox</h1>
             <!-- <h4>OPTIONAL TAG LINE</h4> -->
             <p>
-                In this game, students can experiment with dynamic models illustrating how molecules interact to explain observable phenomena.  
-                In this version, users can control molecule color, speed, stickiness, and size (radius).  
+                In this game, students can experiment with dynamic models illustrating how particles interact to explain observable phenomena.
+                In this version, users can control particle color, size (radius), speed, and attractive forces.  <br>
+                <br>
+                Models to investigate Phase Transitions, Evaporation of a Liquid, and Solute-Solvent interactions are included.
 
             </p>
 

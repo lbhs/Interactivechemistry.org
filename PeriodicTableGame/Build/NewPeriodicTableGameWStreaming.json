@@ -1,6 +1,6 @@
 {
 "companyName": "IC2020",
-"productName": "Matchmaker (Ionic Bonding Game)",
+"productName": "PeriodicTableGame",
 "productVersion": "1.0",
 "dataUrl": "NewPeriodicTableGameWStreaming.data.unityweb",
 "wasmCodeUrl": "NewPeriodicTableGameWStreaming.wasm.code.unityweb",

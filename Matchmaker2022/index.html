@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 unity webgl responsive
 
 template by dom
@@ -23,7 +23,7 @@ https://github.com/sno/unity-webgl-responsive
 
 <link rel="icon" href="/favicon.ico">
 <title>
-  Matchmaker (Ionic Bonding Game) | Interactive Chemistry
+  %UNITY_WEB_NAME% | Interactive Chemistry
 </title>
 <meta name="description" content="
 
@@ -62,7 +62,7 @@ Ionic bonding is made easy using interlocking shapes to represent cations and an
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Matchmaker (Ionic Bonding Game)</title>
+  <title>%UNITY_WEB_NAME%</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -74,13 +74,13 @@ Ionic bonding is made easy using interlocking shapes to represent cations and an
   <script src="assets/js/jquery-3.4.1.min.js"></script>
 
   <!-- unity resources -->
-  <script src="Build/UnityLoader.js"></script>
+  <script src="%UNITY_WEBGL_LOADER_URL%"></script>
 
   <script>
     // instantiate webgl only if we're not on a touch device
     var isTouch = ('ontouchstart' in document.documentElement);
     if (!isTouch) {
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Dec 6 Build (4 scenes, incl PerTable).json");
+      var unityInstance = UnityLoader.instantiate("unityContainer", "%UNITY_WEBGL_BUILD_URL%");
     }
   </script>
 

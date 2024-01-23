@@ -6,6 +6,16 @@
     <title>Unity WebGL Player | ElectrostaticForces2023</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+     <!-- google analytics ADDED THIS TO DEFAULT TEMPLATE-->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8XTEY4S1B"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Y8XTEY4S1B');
+      </script>
+
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -57,11 +67,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/CurrentBuild.loader.js";
+      var loaderUrl = buildUrl + "/Default Template Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/CurrentBuild.data",
-        frameworkUrl: buildUrl + "/CurrentBuild.framework.js",
-        codeUrl: buildUrl + "/CurrentBuild.wasm",
+        dataUrl: buildUrl + "/Default Template Build.data",
+        frameworkUrl: buildUrl + "/Default Template Build.framework.js",
+        codeUrl: buildUrl + "/Default Template Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "IC2020",
         productName: "ElectrostaticForces2023",

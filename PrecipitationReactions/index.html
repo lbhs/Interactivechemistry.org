@@ -6,6 +6,16 @@
     <title>Unity WebGL Player | Precipitation Reactions</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+ <!-- google analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8XTEY4S1B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y8XTEY4S1B');
+  </script>
+
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -63,7 +73,7 @@
         frameworkUrl: buildUrl + "/CurrentBuild.framework.js",
         codeUrl: buildUrl + "/CurrentBuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "IC2020",
         productName: "Precipitation Reactions",
         productVersion: "1.0",
         showBanner: unityShowBanner,

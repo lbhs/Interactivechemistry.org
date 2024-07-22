@@ -1,0 +1,16 @@
+{
+"companyName": "IC2020",
+"productName": "ChemLEAP--States Of Matter",
+"productVersion": "2.0",
+"dataUrl": "ChemLEAP1.1(single substance).data.unityweb",
+"wasmCodeUrl": "ChemLEAP1.1(single substance).wasm.code.unityweb",
+"wasmFrameworkUrl": "ChemLEAP1.1(single substance).wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.23f1"
+}

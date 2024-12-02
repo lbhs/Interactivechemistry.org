@@ -3,13 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Matchmaker2023</title>
+    <title>Unity WebGL Player | Periodic Table Game</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+     <!-- google analytics ADDED THIS TO DEFAULT TEMPLATE-->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8XTEY4S1B"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Y8XTEY4S1B');
+      </script>
+
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1160 height=720></canvas>
+      <canvas id="unity-canvas" width=1280 height=720 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,10 +30,11 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Matchmaker2023</div>
+        <div id="unity-build-title">Periodic Table Game</div>
       </div>
     </div>
     <script>
+
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
@@ -62,8 +73,8 @@
         frameworkUrl: buildUrl + "/CurrentBuild.framework.js",
         codeUrl: buildUrl + "/CurrentBuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "AACT Games",
-        productName: "Matchmaker2023",
+        companyName: "IC2020",
+        productName: "Periodic Table Game",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -89,11 +100,11 @@
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
 
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
+
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1160px";
+        canvas.style.width = "1280px";
         canvas.style.height = "720px";
       }
 
@@ -104,16 +115,18 @@
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
-        }).then((unityInstance) => {
-          loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-          };
-        }).catch((message) => {
-          alert(message);
-        });
-      };
+              }).then((unityInstance) => {
+                loadingBar.style.display = "none";
+                fullscreenButton.onclick = () => {
+                  unityInstance.SetFullscreen(1);
+                };
+              }).catch((message) => {
+                alert(message);
+              });
+            };
+
       document.body.appendChild(script);
+
     </script>
   </body>
 </html>

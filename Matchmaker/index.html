@@ -1,4 +1,4 @@
-﻿<!--
+<!--
 unity webgl responsive
 
 template by dom
@@ -23,13 +23,12 @@ https://github.com/sno/unity-webgl-responsive
 
 <link rel="icon" href="/favicon.ico">
 <title>
-  Matchmaker (Ionic Bonding Game) | Interactive Chemistry
+  Periodic Table Game | Interactive Chemistry
 </title>
 <meta name="description" content="
 
-Ionic bonding is made easy using interlocking shapes to represent cations and anions.
-
-">
+Ionic bonding is made easy using interlocking shapes to represent cations and anions.  A Periodic Table version relates atomic valence to
+families of the periodic table.">
 
 <!--
 
@@ -62,7 +61,7 @@ Ionic bonding is made easy using interlocking shapes to represent cations and an
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Matchmaker (Ionic Bonding Game)</title>
+  <title>Matchmaker Ionic Bonding</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -71,18 +70,7 @@ Ionic bonding is made easy using interlocking shapes to represent cations and an
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <script src="assets/js/jquery-3.4.1.min.js"></script>
-
-  <!-- unity resources -->
-  <script src="Build/UnityLoader.js"></script>
-
-  <script>
-    // instantiate webgl only if we're not on a touch device
-    var isTouch = ('ontouchstart' in document.documentElement);
-    if (!isTouch) {
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/BuildForChemEd_July28.json");
-    }
-  </script>
+  <script src="assets/js/jquery-3.4.1.min.js"></script> 
 
   <!-- google analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8XTEY4S1B"></script>
@@ -106,9 +94,17 @@ Ionic bonding is made easy using interlocking shapes to represent cations and an
                             media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
                     <img src="/Images/IC2020logoLightOnDarkCrop.png" alt="Interactive Chemistry" style="width:200px ">
                 </picture>
+                
             </a>
-        </h2>
+        </h2>        
     </div>
+    <!--Button to Access InteractiveChemistry.org main page -->
+    <div class="w3-center relative">
+        <a href="https://interactivechemistry.org" class="w3-button w3-border w3-round-medium w3-aqua">
+                    See More Interactive Chemistry Games
+        </a>
+    </div>
+
     <!--
         _____                                                        _                    _
         |  __ \                                                      | |                  | |
@@ -116,47 +112,117 @@ Ionic bonding is made easy using interlocking shapes to represent cations and an
         |  ___/   / _` |  / _` |  / _ \        / __|  / _ \  | '_ \  | __|  / _ \ | '_ \  | __|
         | |      | (_| | | (_| | |  __/       | (__  | (_) | | | | | | |_  |  __/ | | | | | |_
         |_|       \__,_|  \__, |  \___|        \___|  \___/  |_| |_|  \__|  \___| |_| |_|  \__|
-        
-        
+
+
     -->
-    <div class="w3-main w3-content  w3-whiteDynamic" style="max-width:1200px;margin-top:0px">
-        <div class="info">
-            <h1>Matchmaker Ionic Bonding Game</h1>
-            <!-- <h4>OPTIONAL TAG LINE</h4> -->
-            <p>
-                In this game, the concept of Valence is clearly demonstrated using interlocking shapes to represent Cations and Anions.
-                The game also allows students to practice their formula-writing skills including both monatomic and polyatomic ions.<br>
+
+  <div class="w3-main w3-content w3-padding" style="max-width:1800px;margin-top:20px;margin-left:60px; margin-right:60px">
+  
+<title>W3.CSS</title>
+<meta name="viewport" content="width=100%, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-row w3-row-padding-20 ">
+  <div class="w3-container w3-half  w3-border">   <!--"w3-center relative"--> 
+        
+        <h2>   Matchmaker Ionic Bonding Game</h2>       
+
+        <p>
+            In this game, the concepts of Valence and Ionic Bonding are clearly demonstrated using interlocking shapes to represent Cations and Anions.
+            Students also practice writing formulas that use monatomic and polyatomic ions.<br>
                 
 
-            </p>
+        </p>
 
-            <br>
-
-
-
-            <br>
-            <h3>
-                <span><b>Suggested Lessons:</b><br>
-            </h3>
-            <h4>
-                <!--  • <a href="_ _ _ _ _ _"> _ _ _ _ _ _ </a> <br>  -->
-                • <a href="https://docs.google.com/document/d/1CRuhD8ucYTRkbG76SBG7YB_jI8EK6e5pEV-AAtoQrb8/edit?usp=sharing"> Investigating Ionic Compounds using the Matchmaker Game</a> </span>
-
-            </h4>
-
-
-
-            <br>
-            <div class="w3-center relative">
-                <a href="/" class="w3-button w3-border w3-round-xlarge">
-                    See Other InteractiveChemistry Games
-                </a>
-            </div>
+        <div class="w3-center relative">
+            <a href="https://youtu.be/zzJR0DoIQtw"> Video Instructions</a>
         </div>
-        <script src="assets/js/app.js"></script>
+
+        <h4>
+            Suggested Lessons:
+        </h4>
+       
+        <p>
+            <!--  • <a href="_ _ _ _ _ _"> _ _ _ _ _ _ </a> <br>  -->
+            • <a href="https://docs.google.com/document/d/1VcuxHkS5w-AK_tfCAQB2JWVHpdPcL3L1r0THzSaLI6E/edit?usp=sharing"> Investigating Ionic Compounds using the Matchmaker Game</a> </span>
+
+        </p>
+        <!-- • <a href="LINK HERE"> Name of link</a> </span> -->
+
+        
+
+        <div class="w3-center relative">
+            <a href="https://interactivechemistry.org/Matchmaker2024/" class="w3-button  w3-round-xlarge w3-blue">
+                Play Matchmaker Game
+                
+            </a>  
+            
+        </div>
+        <br>
+        <div class="w3-center relative">
+       
+            <img src="https://interactivechemistry.org/Images/Matchmaker2024Screenshot.png" alt="No picture found" style="width:90%"
+                         class="w3-round-xlarge">
+        </div>
+        <br>
+  </div>
+
+
+  <div class="w3-container w3-half  w3-border" >  <!--style="background-color: #ffeeee;-->
+    <h2>Periodic Table Game</h2>  
+    <p>
+            This game introduces students to ionic compounds based on the periodic table of elements.  
+            The concepts of combining ratios and the grouping of elements in "families" are clearly communicated.<br>               
+            
+    </p>
+
+    <div class="w3-center relative">
+        <a href="https://youtu.be/ZoZFOcqLcgY"> Video Instructions</a>
     </div>
 
-    <!-- WebGL content -->\
+    <h4>
+            <span>Suggested Lessons:
+    </h4>
+
+    <p>
+        <p>
+                <!--• <a href="_ _ _ _ _ _"> ----- </a> <br>  -->
+                • <a href="https://docs.google.com/document/d/163TmBuyibTlpVkph4R6cvKQNeOuSBG9fnSSps9wuv1w/edit?usp=sharing"> Periodic Table Game (using Matchmaker Models)</a> 
+
+        </p></span>
+        <!-- • <a href="LINK HERE"> Name of link</a> </span> -->
+
+    </p>
+
+        <div class="w3-center relative">
+            <a href="https://interactivechemistry.org/PeriodicTable/" class="w3-button  w3-round-xlarge w3-red">
+                Play Periodic Table Game                
+            </a>  
+            
+        </div>
+        <br>
+        <div class="w3-center relative">
+       
+            <img src="https://interactivechemistry.org/Images/PeriodicTableGameScreenshot.png" alt="No picture found" style="width:90%"
+                         class="w3-round-xlarge">
+        </div>
+        <br>
+  </div>
+</div>
+<br>
+        
+
+    
+
+    
+    </div>
+
+
+    
+    <!--INTRO PAGE HAS NO WEBGL CONTENT!!!
+
+    <!-- WebGL content 
 
     <div class="w3-main w3-whiteDynamic">
         <div class="webgl-wrapper">
@@ -170,6 +236,10 @@ Ionic bonding is made easy using interlocking shapes to represent cations and an
             </div>
         </div>
     </div>
+
+    -->
+
+
     <!--
 
      _____                   _                    _
@@ -183,14 +253,14 @@ Ionic bonding is made easy using interlocking shapes to represent cations and an
           -->
     <hr class="dynamic">
     <footer class="w3-row-padding w3-padding-32">
-        <div class="w3-half">
+        <div class="w3-center">
             <h2>Contact us</h2>
             <p>
-                Have you found a problem or bug with our website? Please let us know <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGF4RMAOoKrB5RMPaLna-zKHaA5kyqlsKMohkRE3DGdrII-Q/viewform">here</a>
+                Have you found a problem or bug with our website? Please let us know <a href="https://forms.gle/kVgnZ1vtQXECNuBu8">here</a>
             </p>
             <br>
             <p>
-                Do you have a suggestion for a new feature or future software? Please let us know <a href="https://docs.google.com/forms/d/e/1FAIpQLSehVnJdTg3HCtr2ZOoazfxO90DRS5VEV3kEpLbx1EAZCSsvAA/viewform">here</a>
+                Do you have a suggestion for a new feature or future software? Please let us know <a href="https://forms.gle/oBJ8BoGWzodiaVc49">here</a>
             </p>
             <br>
             <p>

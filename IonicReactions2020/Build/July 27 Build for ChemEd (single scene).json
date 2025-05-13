@@ -1,0 +1,15 @@
+{
+"companyName": "IC2020",
+"productName": "IonicReactions",
+"productVersion": "4",
+"dataUrl": "July 27 Build for ChemEd (single scene).data.unityweb",
+"wasmCodeUrl": "July 27 Build for ChemEd (single scene).wasm.code.unityweb",
+"wasmFrameworkUrl": "July 27 Build for ChemEd (single scene).wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#0C0C0C",
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.23f1"
+}

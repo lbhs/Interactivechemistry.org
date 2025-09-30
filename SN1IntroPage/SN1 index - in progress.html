@@ -1,0 +1,334 @@
+<!--
+unity webgl responsive
+
+template by dom
+dom@crowscrowscrows.com
+https://twitter.com/zerstoerer
+
+source code on github
+https://github.com/sno/unity-webgl-responsive
+
+  _____                                               _                        _                                _           _          
+ |  __ \                                             (_)                      | |                              | |         | |         
+ | |__) |   ___   ___   _ __     ___    _ __    ___   _  __   __   ___        | |_    ___   _ __ ___    _ __   | |   __ _  | |_    ___ 
+ |  _  /   / _ \ / __| | '_ \   / _ \  | '_ \  / __| | | \ \ / /  / _ \       | __|  / _ \ | '_ ` _ \  | '_ \  | |  / _` | | __|  / _ \
+ | | \ \  |  __/ \__ \ | |_) | | (_) | | | | | \__ \ | |  \ V /  |  __/       | |_  |  __/ | | | | | | | |_) | | | | (_| | | |_  |  __/
+ |_|  \_\  \___| |___/ | .__/   \___/  |_| |_| |___/ |_|   \_/    \___|        \__|  \___| |_| |_| |_| | .__/  |_|  \__,_|  \__|  \___|
+                       | |                                                                             | |                             
+                       |_|                                                                             |_|                             
+-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<link rel="icon" href="/favicon.ico">
+<title>
+  SN2 Reaction Game | Interactive Chemistry
+</title>
+<meta name="description" content="In this game, students use an energizable protic solvent molecule (jellyfish) 
+to remove a leaving group from an electrophile (tButyl chloride) to produce a carbonium ion. This high energy intermediate
+can then react with various nucleophiles to produce products such at t-butyl alcohol.
+Nucleophilic Substitution. A two step Energy profile with a high energy intermediate is included. 
+The dynamic models in this game were created using Unity. Steve Sogo is the creator."
+>
+
+<!--
+
+  _         _                   _   _       _                                 
+ (_)       | |                 ( ) | |     | |                                
+  _      __| |   ___    _ __   |/  | |_    | | __  _ __     ___   __      __  
+ | |    / _` |  / _ \  | '_ \      | __|   | |/ / | '_ \   / _ \  \ \ /\ / /  
+ | |   | (_| | | (_) | | | | |     | |_    |   <  | | | | | (_) |  \ V  V /   
+ |_|    \__,_|  \___/  |_| |_|      \__|   |_|\_\ |_| |_|  \___/    \_/\_/    
+                                                                              
+                                                                              
+             _               _       _                              _   _     
+            | |             | |     | |                            | | | |    
+ __      __ | |__     __ _  | |_    | |_    ___       ___    __ _  | | | |    
+ \ \ /\ / / | '_ \   / _` | | __|   | __|  / _ \     / __|  / _` | | | | |    
+  \ V  V /  | | | | | (_| | | |_    | |_  | (_) |   | (__  | (_| | | | | |    
+   \_/\_/   |_| |_|  \__,_|  \__|    \__|  \___/     \___|  \__,_| |_| |_|    
+                                                                              
+                                                                              
+  _     _       _                               _     _                       
+ | |   | |     (_)                             | |   (_)                      
+ | |_  | |__    _   ___     ___    ___    ___  | |_   _    ___    _ __        
+ | __| | '_ \  | | / __|   / __|  / _ \  / __| | __| | |  / _ \  | '_ \       
+ | |_  | | | | | | \__ \   \__ \ |  __/ | (__  | |_  | | | (_) | | | | |      
+  \__| |_| |_| |_| |___/   |___/  \___|  \___|  \__| |_|  \___/  |_| |_|      
+                                                                              
+                                                                              
+ -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Matchmaker Ionic Bonding</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="assets/js/jquery-3.4.1.min.js"></script> 
+
+  <!-- google analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8XTEY4S1B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y8XTEY4S1B');
+  </script>
+</head>
+
+<body class="vsc-initialized">
+    <!-- Top menu -->
+    <div class="w3-center  w3-whiteDynamic ">
+        <h2>
+            <a href="/">
+                <picture>
+                    <source srcset="/Images/IC2020logoLightOnDarkCrop.png" media="(prefers-color-scheme: dark)" />
+                    <source srcset="/Images/IC2020logoDarkOnLightCrop.png"
+                            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+                    <img src="/Images/IC2020logoLightOnDarkCrop.png" alt="Interactive Chemistry" style="width:200px ">
+                </picture>
+                
+            </a>
+        </h2>        
+    </div>
+    <!--Button to Access InteractiveChemistry.org main page -->
+    <div class="w3-center relative">
+        <a href="https://interactivechemistry.org" class="w3-button w3-border w3-round-medium w3-aqua">
+                    See More Interactive Chemistry Games
+        </a>
+    </div>
+
+    <!--
+        _____                                                        _                    _
+        |  __ \                                                      | |                  | |
+        | |__) |   __ _    __ _    ___          ___    ___    _ __   | |_    ___   _ __   | |_
+        |  ___/   / _` |  / _` |  / _ \        / __|  / _ \  | '_ \  | __|  / _ \ | '_ \  | __|
+        | |      | (_| | | (_| | |  __/       | (__  | (_) | | | | | | |_  |  __/ | | | | | |_
+        |_|       \__,_|  \__, |  \___|        \___|  \___/  |_| |_|  \__|  \___| |_| |_|  \__|
+
+
+    -->
+
+  <div class="w3-main w3-content w3-padding" style="max-width:1200px; margin-top:20px ">
+  
+<title>W3.CSS</title>
+<meta name="viewport" content="width=100%, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-row w3-row-padding-20 ">
+  <div class="w3-container  w3-border">   <!--"w3-center relative"--> 
+        
+        <h2>   SN2 Reactions</h2>       
+
+        <p>
+            Use an energizable solvent molecule (represented as a jellyfish) to remove a leaving group from a suitable electrophile. 
+            Then react the carbonium ion with a nucleophile to produce products. A two-step Energy Profile shows the high energy intermediate
+            characteristic of SN1 reactions.             
+            Two versions are offered:  one for keyboard controls and one for mobile devices (touchscreen controls)
+            <br>
+                
+
+        </p>
+        
+        <div class="w3-center relative">
+            <a href=""> Video Instructions</a>
+        </div>
+        
+        <h4>
+            Suggested Lessons:
+        </h4>
+       
+        <p>
+            
+               • <a href="https://docs.google.com/document/d/1eORk635lQf3A9j2cCl2cUaSm2RzgT5lIxKlw5HZU_VE/edit?usp=sharing"> Investigating SN2 Reactions</a> </span>
+        </p>
+        <!-- • <a href="LINK HERE"> Name of link</a> </span> -->
+
+    <!--NOW GOING TO TWO COLUMNS FOR THE KEYBOARD VS MOBILE VERSIONS--> 
+
+        <div class="w3-row w3-row-padding-20 ">
+  <div class="w3-container w3-half  w3-border">   <!--"w3-center relative"--> 
+        
+        <h2>   Keyboard Version</h2>       
+
+        <p>
+            Choose this if you want to use Keyboard controls (arrow keys).<br>
+                
+        </p>    
+       
+
+        <div class="w3-center relative">
+            <a href="https://interactivechemistry.org/SN1K/" class="w3-button  w3-round-xlarge w3-blue">
+                Keyboard Version
+                
+            </a>  
+            
+        </div>
+        <br>
+        <div class="w3-center relative">
+       
+            <img src="https://interactivechemistry.org/Images/SN1K.png" alt="No picture found" style="width:80%"
+                         class="w3-round-xlarge">
+        </div>
+        <br>
+  </div>
+
+
+  <div class="w3-container w3-half  w3-border" >  <!--style="background-color: #ffeeee;-->
+    <h2>Mobile Version</h2>  
+    <p>
+            Choose this version if playing on a phone or tablet.<br>               
+            
+    </p>   
+
+        <div class="w3-center relative">
+            <a href="https://interactivechemistry.org/SN1M/" class="w3-button  w3-round-xlarge w3-red">
+                Play Mobile Version                
+            </a>  
+            
+        </div>
+        <br>
+        <div class="w3-center relative">
+       
+            <img src="https://interactivechemistry.org/Images/SN1M.png" alt="No picture found" style="width:80%"
+                         class="w3-round-xlarge">
+        </div>
+        <br>
+  </div>
+</div>
+
+        
+        <!--OLD CODE WITH ONLY ONE OPTION
+        <div class="w3-center relative">
+            <a href="https://interactivechemistry.org/2024MolModels/" class="w3-button  w3-round-xlarge w3-blue">
+                Play Now
+                
+            </a>  
+            <br>
+            <br>
+
+            <a href="https://interactivechemistry.org/2024MolModels/">
+            <img src="https://interactivechemistry.org/Images/2-DMolecularModels.PNG" alt="No picture found" 
+            style="width:90%" class="w3-round-xlarge">
+                
+            </a>  
+            
+        </div>
+        <br>
+        <div class="w3-center relative">            
+            <!--
+            <img src="https://interactivechemistry.org/Images/2-DMolecularModels.PNG" alt="No picture found" style="width:90%"
+                         class="w3-round-xlarge">
+            -->
+        </div>
+        
+        <br>
+  </div>
+
+
+  
+</div>
+
+        
+
+    
+
+    
+    </div>
+
+
+    
+    <!--INTRO PAGE HAS NO WEBGL CONTENT!!!
+
+    <!-- WebGL content 
+
+    <div class="w3-main w3-whiteDynamic">
+        <div class="webgl-wrapper">
+            <div class="webgl-content">
+                <div id="unityContainer" style="width:1280px; height: 720px;"></div>
+            </div>
+            <div>
+                <div class="relative w3-right-align w3-padding-16">
+                    <a href="#" onclick="unityInstance.SetFullscreen(1)" class="w3-button  w3-round-xlarge w3-blue">Fullscreen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    -->
+
+
+    <!--
+
+     _____                   _                    _
+     / ____|                 | |                  | |
+    | |        ___    _ __   | |_    __ _    ___  | |_               _   _   ___
+    | |       / _ \  | '_ \  | __|  / _` |  / __| | __|             | | | | / __|
+    | |____  | (_) | | | | | | |_  | (_| | | (__  | |_              | |_| | \__ \
+     \_____|  \___/  |_| |_|  \__|  \__,_|  \___|  \__|              \__,_| |___/
+
+
+          -->
+    <hr class="dynamic">
+    <footer class="w3-row-padding w3-padding-32">
+        <div class="w3-center">
+            <h2>Contact us</h2>
+            <p>
+                Have you found a problem or bug with our website? Please let us know <a href="https://forms.gle/kVgnZ1vtQXECNuBu8">here</a>
+            </p>
+            <br>
+            <p>
+                Do you have a suggestion for a new feature or future software? Please let us know <a href="https://forms.gle/oBJ8BoGWzodiaVc49">here</a>
+            </p>
+            <br>
+            <p>
+                Otherwise, please email us at <a href="mailto:lbhsic2020@gmail.com">lbhsic2020@gmail.com</a>
+            </p>
+        </div>
+        </div>
+
+        <!--
+          __                   _
+         / _|                 | |
+        | |_    ___     ___   | |_    ___   _ __
+        |  _|  / _ \   / _ \  | __|  / _ \ | '__|
+        | |   | (_) | | (_) | | |_  |  __/ | |
+        |_|    \___/   \___/   \__|  \___| |_|
+
+
+            -->
+    </footer>
+    <div class="w3-center">
+        <br>
+        <small>
+            Google Play and the Google Play logo are trademarks of Google
+            LLC.
+        </small>
+        <br>
+        <small>
+            Template provided by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+        </small>
+    </div>
+    </div>
+</body>
+
+<!-- feel free to remove all credits! -->
+<!-- <div class="info">
+  <p>source code on <a href="https://github.com/sno/unity-webgl-responsive">github</a></p>
+  <p>template by dom / <a href="https://twitter.com/zerstoerer">@zerstoerer</a></p>
+</div> -->
+
+
+<!-- Big text made with http://patorjk.com/software/taag/#p=display&h=0&v=0&f=Big&t= -->
+
+</html>

@@ -1,0 +1,283 @@
+<!--
+unity webgl responsive
+
+template by dom
+dom@crowscrowscrows.com
+https://twitter.com/zerstoerer
+
+source code on github
+https://github.com/sno/unity-webgl-responsive
+
+  _____                                               _                        _                                _           _          
+ |  __ \                                             (_)                      | |                              | |         | |         
+ | |__) |   ___   ___   _ __     ___    _ __    ___   _  __   __   ___        | |_    ___   _ __ ___    _ __   | |   __ _  | |_    ___ 
+ |  _  /   / _ \ / __| | '_ \   / _ \  | '_ \  / __| | | \ \ / /  / _ \       | __|  / _ \ | '_ ` _ \  | '_ \  | |  / _` | | __|  / _ \
+ | | \ \  |  __/ \__ \ | |_) | | (_) | | | | | \__ \ | |  \ V /  |  __/       | |_  |  __/ | | | | | | | |_) | | | | (_| | | |_  |  __/
+ |_|  \_\  \___| |___/ | .__/   \___/  |_| |_| |___/ |_|   \_/    \___|        \__|  \___| |_| |_| |_| | .__/  |_|  \__,_|  \__|  \___|
+                       | |                                                                             | |                             
+                       |_|                                                                             |_|                             
+-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<link rel="icon" href="/favicon.ico">
+<title>
+  Double Replacement Reaction Simulator | Interactive Chemistry
+</title>
+<meta name="description" content="
+An introduction to the life of a cell and its biochemistry.  The game includes mitochondria, Krebs Cycle, Bloodstream
+Carbon Dioxide, and ATP formation.  ">
+
+<!--
+
+  _         _                   _   _       _                                 
+ (_)       | |                 ( ) | |     | |                                
+  _      __| |   ___    _ __   |/  | |_    | | __  _ __     ___   __      __  
+ | |    / _` |  / _ \  | '_ \      | __|   | |/ / | '_ \   / _ \  \ \ /\ / /  
+ | |   | (_| | | (_) | | | | |     | |_    |   <  | | | | | (_) |  \ V  V /   
+ |_|    \__,_|  \___/  |_| |_|      \__|   |_|\_\ |_| |_|  \___/    \_/\_/    
+                                                                              
+                                                                              
+             _               _       _                              _   _     
+            | |             | |     | |                            | | | |    
+ __      __ | |__     __ _  | |_    | |_    ___       ___    __ _  | | | |    
+ \ \ /\ / / | '_ \   / _` | | __|   | __|  / _ \     / __|  / _` | | | | |    
+  \ V  V /  | | | | | (_| | | |_    | |_  | (_) |   | (__  | (_| | | | | |    
+   \_/\_/   |_| |_|  \__,_|  \__|    \__|  \___/     \___|  \__,_| |_| |_|    
+                                                                              
+                                                                              
+  _     _       _                               _     _                       
+ | |   | |     (_)                             | |   (_)                      
+ | |_  | |__    _   ___     ___    ___    ___  | |_   _    ___    _ __        
+ | __| | '_ \  | | / __|   / __|  / _ \  / __| | __| | |  / _ \  | '_ \       
+ | |_  | | | | | | \__ \   \__ \ |  __/ | (__  | |_  | | | (_) | | | | |      
+  \__| |_| |_| |_| |___/   |___/  \___|  \___|  \__| |_|  \___/  |_| |_|      
+                                                                              
+                                                                              
+ -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Matchmaker Ionic Bonding</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="assets/js/jquery-3.4.1.min.js"></script> 
+
+  <!-- google analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8XTEY4S1B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y8XTEY4S1B');
+  </script>
+</head>
+
+<body class="vsc-initialized">
+    <!-- Top menu -->
+    <div class="w3-center  w3-whiteDynamic ">
+        <h2>
+            <a href="/">
+                <picture>
+                    <source srcset="/Images/IC2020logoLightOnDarkCrop.png" media="(prefers-color-scheme: dark)" />
+                    <source srcset="/Images/IC2020logoDarkOnLightCrop.png"
+                            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+                    <img src="/Images/IC2020logoLightOnDarkCrop.png" alt="Interactive Chemistry" style="width:200px ">
+                </picture>
+                
+            </a>
+        </h2>        
+    </div>
+    <!--Button to Access InteractiveChemistry.org main page -->
+    <div class="w3-center relative">
+        <a href="https://interactivechemistry.org" class="w3-button w3-border w3-round-medium w3-aqua">
+                    See More Interactive Chemistry Games
+        </a>
+    </div>
+
+    <!--
+        _____                                                        _                    _
+        |  __ \                                                      | |                  | |
+        | |__) |   __ _    __ _    ___          ___    ___    _ __   | |_    ___   _ __   | |_
+        |  ___/   / _` |  / _` |  / _ \        / __|  / _ \  | '_ \  | __|  / _ \ | '_ \  | __|
+        | |      | (_| | | (_| | |  __/       | (__  | (_) | | | | | | |_  |  __/ | | | | | |_
+        |_|       \__,_|  \__, |  \___|        \___|  \___/  |_| |_|  \__|  \___| |_| |_|  \__|
+
+
+    -->
+
+  <div class="w3-main w3-content w3-padding" style="max-width:1200px; margin-top:20px ">
+  
+<title>W3.CSS</title>
+<meta name="viewport" content="width=100%, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-row w3-row-padding-20 ">
+  <div class="w3-container  w3-border">   <!--"w3-center relative"--> 
+        
+        <h2>   Cell Model (2025)</h2>       
+
+        <p>
+            In this fast-paced game, students play as a cell in the human body, trying to acquire reagents needed to produce ATP within mitochondria.
+            Molecules will appear in the bloodstream, and the player must choose which to import (and which to avoid).  
+            A second level of the game challenges students to keep a heart cell alive even as each heartbeat uses up ATP.  
+            <br>
+        <br>        
+            <mark>This game is playable on Laptops, Chromebooks, and Mobile devices!</mark>
+        </p>
+
+        
+        <div class="w3-center relative">
+            <a href="https://www.youtube.com/watch?v=BFVTFEdaJwg"> Video Instructions</a>
+        </div>
+        
+        <br>
+        <h4>
+            Suggested Lessons:
+        </h4>
+       
+        <p>
+            <!--  • <a href="_ _ _ _ _ _"> _ _ _ _ _ _ </a> <br>  SCROLL RIGHT TO SEE DOC TITLE-->
+               • <a href="https://docs.google.com/document/d/1_7X6m2G5Z8W9Ebo35BgGlorGWEwkYvw_QbO47F5D1SM/edit?usp=sharing"> Ionic Reactions 2025 Introductory Lesson</a> </span>
+            <br>
+            <!--
+               • <a href="https://docs.google.com/document/d/1xozEfxIYiiecTri1iXweYLDP3KyibcyLcjQo2VAob7Q/edit?usp=sharing"> Molecules that contain Double Bonds</a> </span>
+            -->
+        </p>
+        <!-- • <a href="LINK HERE"> Name of link</a> </span> -->
+
+        
+
+        <div class="w3-center relative">
+            <a href="https://interactivechemistry.org/CellModel2025/" class="w3-button  w3-round-xlarge w3-blue">
+                Play the new 2025 version
+                
+            </a>  
+            <br>
+            <br>
+            <a href="https://interactivechemistry.org/CellModel2020/" class="w3-button  w3-round-xlarge w3-green">
+                Play the old 2020 version
+                
+            </a>  
+            <br>
+
+            <!--  The link below makes the picture an active link! -->
+            <a href="https://interactivechemistry.org/IonicReactions2025/">
+            <img src="https://interactivechemistry.org/Images/IonicReactions2025.png"" alt="No picture found" 
+            style="width:90%" class="w3-round-xlarge">
+                
+            </a>  
+            
+        </div>
+        <br>
+        
+        <br>
+  </div>
+
+
+  
+</div>
+
+        
+
+    
+
+    
+    </div>
+
+
+    
+    <!--INTRO PAGE HAS NO WEBGL CONTENT!!!
+
+    <!-- WebGL content 
+
+    <div class="w3-main w3-whiteDynamic">
+        <div class="webgl-wrapper">
+            <div class="webgl-content">
+                <div id="unityContainer" style="width:1280px; height: 720px;"></div>
+            </div>
+            <div>
+                <div class="relative w3-right-align w3-padding-16">
+                    <a href="#" onclick="unityInstance.SetFullscreen(1)" class="w3-button  w3-round-xlarge w3-blue">Fullscreen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    -->
+
+
+    <!--
+
+     _____                   _                    _
+     / ____|                 | |                  | |
+    | |        ___    _ __   | |_    __ _    ___  | |_               _   _   ___
+    | |       / _ \  | '_ \  | __|  / _` |  / __| | __|             | | | | / __|
+    | |____  | (_) | | | | | | |_  | (_| | | (__  | |_              | |_| | \__ \
+     \_____|  \___/  |_| |_|  \__|  \__,_|  \___|  \__|              \__,_| |___/
+
+
+          -->
+    <hr class="dynamic">
+    <footer class="w3-row-padding w3-padding-32">
+        <div class="w3-center">
+            <h2>Contact us</h2>
+            <p>
+                Have you found a problem or bug with our website? Please let us know <a href="https://forms.gle/kVgnZ1vtQXECNuBu8">here</a>
+            </p>
+            <br>
+            <p>
+                Do you have a suggestion for a new feature or future software? Please let us know <a href="https://forms.gle/oBJ8BoGWzodiaVc49">here</a>
+            </p>
+            <br>
+            <p>
+                Otherwise, please email us at <a href="mailto:lbhsic2020@gmail.com">lbhsic2020@gmail.com</a>
+            </p>
+        </div>
+        </div>
+
+        <!--
+          __                   _
+         / _|                 | |
+        | |_    ___     ___   | |_    ___   _ __
+        |  _|  / _ \   / _ \  | __|  / _ \ | '__|
+        | |   | (_) | | (_) | | |_  |  __/ | |
+        |_|    \___/   \___/   \__|  \___| |_|
+
+
+            -->
+    </footer>
+    <div class="w3-center">
+        <br>
+        <small>
+            Google Play and the Google Play logo are trademarks of Google
+            LLC.
+        </small>
+        <br>
+        <small>
+            Template provided by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+        </small>
+    </div>
+    </div>
+</body>
+
+<!-- feel free to remove all credits! -->
+<!-- <div class="info">
+  <p>source code on <a href="https://github.com/sno/unity-webgl-responsive">github</a></p>
+  <p>template by dom / <a href="https://twitter.com/zerstoerer">@zerstoerer</a></p>
+</div> -->
+
+
+<!-- Big text made with http://patorjk.com/software/taag/#p=display&h=0&v=0&f=Big&t= -->
+
+</html>

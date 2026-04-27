@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | DNAGame2FromPackage</title>
+    <title>Unity Web Player | DNAGame2WithTranslation</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1160 height=720 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">DNAGame2FromPackage</div>
+        <div id="unity-build-title">DNAGame2WithTranslation</div>
       </div>
     </div>
     <script>
@@ -55,12 +55,12 @@
       var loaderUrl = buildUrl + "/CurrentBuild.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/CurrentBuild.data.br",
-        frameworkUrl: buildUrl + "/CurrentBuild.framework.js.br",
-        codeUrl: buildUrl + "/CurrentBuild.wasm.br",
+        dataUrl: buildUrl + "/CurrentBuild.data",
+        frameworkUrl: buildUrl + "/CurrentBuild.framework.js",
+        codeUrl: buildUrl + "/CurrentBuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "DNAGame2FromPackage",
+        companyName: "IC2020",
+        productName: "DNAGame2WithTranslation",
         productVersion: "0.1.0",
         showBanner: unityShowBanner,
         // errorHandler: function(err, url, line) {
@@ -104,8 +104,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1160px";
+        canvas.style.height = "720px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
